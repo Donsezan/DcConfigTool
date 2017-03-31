@@ -105,14 +105,14 @@ namespace DcConfigTool
             {
                 var replacment = @"Date(" + TimeInUnix(day) + ")";
                 line = ReplaceAt(line, match.Index, 19, replacment);
-                if (iteration > configChallanges)
+                if (iteration >= configChallanges)
                 {
-                    iteration = 1;
+                    iteration = 0;
                     day++;
                 }
                 iteration++;
 
-                if (day.Equals(daysInMonth))
+                if (day == daysInMonth+1)
                 {
                     break;
                 }
