@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DcConfigTool
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
             comboBoxMonth.SelectedIndex = 0;
@@ -98,7 +98,7 @@ namespace DcConfigTool
             InputParam.Yeargenerator = false;
             if (validate())
             {
-                BaseProces.Generate();
+                BaseProcess.Generate();
                 pictureBoxDone.Visible = true;
                 textBoxDone.Visible = true;
             }
@@ -109,7 +109,7 @@ namespace DcConfigTool
             InputParam.Yeargenerator = true;
             if (validate())
             {
-                BaseProces.Generate();
+                BaseProcess.Generate();
                 pictureBoxDone.Visible = true;
                 textBoxDone.Visible = true;
             }

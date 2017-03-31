@@ -1,6 +1,6 @@
 ﻿namespace DcConfigTool
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -213,7 +213,7 @@
             this.textBoxDone.Text = "DONE";
             this.textBoxDone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -232,8 +232,9 @@
             this.Controls.Add(this.textBoxInput);
             this.Controls.Add(this.radioButtonMahjong);
             this.Controls.Add(this.radioButtonSoliataire);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Name = "MainForm";
+            this.Text = "DcConfigTool";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDone)).EndInit();
